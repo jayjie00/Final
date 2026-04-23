@@ -1306,9 +1306,9 @@ class StudentKiosk(QWidget):
             printer.setPageSize(QPageSize(QPageSize.PageSizeId.A4))
             
             # If you want the user to choose the printer first, uncomment the next 3 lines:
-            # from PyQt6.QtPrintSupport import QPrintDialog
-            # dialog = QPrintDialog(printer, self)
-            # if dialog.exec() != QPrintDialog.DialogCode.Accepted: return
+            from PyQt6.QtPrintSupport import QPrintDialog
+            dialog = QPrintDialog(printer, self)
+            if dialog.exec() != QPrintDialog.DialogCode.Accepted: return
 
             painter = QPainter(printer)
             
