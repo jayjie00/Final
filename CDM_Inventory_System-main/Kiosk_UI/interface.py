@@ -8,6 +8,7 @@ from PyQt6.QtGui import QFont, QPixmap, QColor
 from PyQt6.QtCore import Qt, QTimer, QDateTime, QDate  # QDate here
 from PyQt6.QtPrintSupport import QPrinter, QPrintDialog
 from PyQt6.QtGui import QPainter, QPdfWriter, QPageLayout, QPageSize
+from database.db_manager import get_all_items
 
 # Ensure the database folder is accessible
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
